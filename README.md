@@ -73,7 +73,7 @@ apksigner sign --ks keystore.jks ForceNet.apk
 
 <p align="center">
   <samp>
-    <b>Dev:</b> 🦋⃟ᴠͥɪͣᴘͫ•𝐒𝐑𝟕 𝐌𝐨𝐝𝐬 <br>
+    <b>Dev:</b> SR7 Mods <br>
     <b>Contact & Links:</b> <a href="https://alexsifatrayhan.github.io/about-me/" target="_blank">alexsifatrayhan.github.io/about-me/</a>
   </samp>
 </p>
