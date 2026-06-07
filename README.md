@@ -26,34 +26,34 @@
 
 ### ⚡ Overview
 
-**ForceNet** ek specialized, lightweight Android tool hai jo device ki hidden `RadioInfo` settings ko bypass karke direct open karta hai. Iski madad se aap cellular network ko specific modes (jaise **LTE Only**, **NR Only**) par lock kar sakte hain, jo normal settings me restricted hota hai.
+**ForceNet** is a specialized, lightweight Android tool built to bypass restrictions and directly open the hidden system `RadioInfo` configurations. This utility allows users to lock cellular networks into specific, stable modes (such as **LTE Only** or **NR Only**) that are usually hidden or restricted by default system settings.
 
-Isko completely **Native Android Components (No AndroidX Dependency)** ke saath build kiya gaya hai, jisse yeh older compilers aur **Termux-based building environments** (jaise AIDE Lite, manual ecj/dx compilation) par bina kisi issue ya heavy dependency errors ke smooth compile aur run hota hai.
+The project is built entirely using **Native Android Components (No AndroidX Dependency)**, ensuring seamless compilation and operation within minimalist building environments, terminal apps like **Termux**, or lighter IDEs without dependency overhead or build errors.
 
 ---
 
 ### 🚀 Key Features
 
-* **Advanced Network Switching:** `RadioInfo` component ko trigger karke temporary ya permanent static network locking (4G/5G Only) activate karein.
-* **Smart Intent Routing:** Android 11+ aur older versions dono ke liye automatic explicit/implicit intent fallback, jisse launch ke waqt custom ROMs ya heavy skins par app crash nahi hota.
-* **Cyber-Green Minimalist UI:** Ek sleek, futuristic layout jisme neon accents, clean action rows aur compact buttons diye gaye hain.
-* **Ultra Lightweight:** Zero third-party dependencies ya AndroidX overhead, perfect for low-spec devices aur standalone compiling.
+* **Advanced Network Locking:** Directly trigger the core `RadioInfo` components to enforce stable, permanent cellular configurations (4G/5G Only mode).
+* **Smart Intent Routing:** Built-in explicit and implicit intent handling optimized for Android 11+ and legacy versions to avoid crashes across custom ROMs or heavy manufacturer skins.
+* **Cyber-Green UI Design:** A sleek, minimalist dark theme interface with vivid neon green highlights, responsive action rows, and compact trigger buttons.
+* **Ultra Lightweight Footprint:** Zero external libraries, zero third-party dependencies, and absolute exclusion of heavy AndroidX architectures.
 
 ---
 
 ### 🛠️ Technical Details & Compilation
 
-Aap is project ko easily terminal ya mobile environments me compile kar sakte hain kyunki isme koi heavy Gradle architecture dependency nahi hai.
+Since this repository bypasses complex Gradle frameworks, you can manually build the APK straight from a terminal or mobile development environment.
 
-#### Manual Compilation via Termux (Sample Flow):
+#### Manual Compilation Flow via Termux:
 ```bash
-# 1. Compile Java Source files using ECJ
+# 1. Compile Java source files using ECJ
 ecj -d bin -cp $ANDROID_JAR src/com/sr7mods/forcenet/*.java
 
 # 2. Convert bytecode to Dalvik Executable (DEX)
 dx --dex --output=classes.dex bin
 
-# 3. Package and Sign the APK using apksigner
+# 3. Package and Sign the application
 zip -r ForceNet.apk AndroidManifest.xml res classes.dex
 apksigner sign --ks keystore.jks ForceNet.apk
 ```
@@ -62,10 +62,10 @@ apksigner sign --ks keystore.jks ForceNet.apk
 
 ### 📂 Repository Structure
 
-* `src/` — Pure Native Java Implementation (Core Network Intent Handling Logic).
-* `res/` — Cyber-Green Layout Resources aur drawables (Bina heavy themes ke).
-* `icon.png` — Official high-resolution launcher icon.
-* `ss.jpg` — Interface visual demonstration.
+* `src/` — Pure Native Java source code housing the intent routing and network management framework.
+* `res/` — Core layout files and clean drawables customized with the signature cyber-green theme.
+* `icon.png` — Official high-resolution application launcher asset.
+* `ss.jpg` — Clean interface showcase screenshot.
 
 ---
 
@@ -74,7 +74,7 @@ apksigner sign --ks keystore.jks ForceNet.apk
 <p align="center">
   <samp>
     <b>Dev:</b> SR7 Mods <br>
-    <b>Contact & Links:</b> <a href="https://alexsifatrayhan.github.io/about-me/" target="_blank">alexsifatrayhan.github.io/about-me/</a>
+    <b>Contact:</b> <a href="https://alexsifatrayhan.github.io/about-me/" target="_blank">alexsifatrayhan.github.io/about-me/</a>
   </samp>
 </p>
 
