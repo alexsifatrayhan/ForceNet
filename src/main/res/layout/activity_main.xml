@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#121212"
+    android:padding="16dp">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnAndroid11Minus"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginBottom="20dp"
+            android:text="Android 11-"
+            android:textColor="#000000"
+            android:background="@drawable/btn_green_rounded"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnAndroid11Plus"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginBottom="20dp"
+            android:text="Android 11+"
+            android:textColor="#000000"
+            android:background="@drawable/btn_green_rounded"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnLegacy"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:text="Legacy"
+            android:textColor="#000000"
+            android:background="@drawable/btn_green_rounded"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/btnDev"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="Dev"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/btn_dark_rounded"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="4dp" />
+
+</LinearLayout>
+

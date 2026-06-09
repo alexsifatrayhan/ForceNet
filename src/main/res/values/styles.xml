@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.ForceNet" parent="@android:style/Theme.DeviceDefault">
+        <item name="android:windowBackground">#121212</item>
+        <item name="android:colorBackground">#121212</item>
+        <item name="android:windowFullscreen">false</item>
+    </style>
+</resources>
+
